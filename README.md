@@ -1,8 +1,9 @@
-# 📚 Learn Along !
+# 📚 Learn Along
 
 Welcome to this humble Github repository where I will share some of the best practices, tips, and more about many topics on how to set up a good project.
 
 You'll learn how to:
+
 - Initialise a basic [Bun](https://bun.sh/) project
 - Add [Commit Lint](https://commitlint.js.org/) to force [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) as a commit message format
 - Set up pre-commit hooks with [Husky]() to force commit lint's format
@@ -21,3 +22,16 @@ You'll learn how to:
 - Add a CI/CD pipeline that runs the Bruno API collection automatically on each push
 - How to optimize the docker image size to the maximum
 
+## 🧱 Prerequesites
+
+Here's a list of knowledge you need to have before doing this:
+
+- Basic git commands to initialise, clone, commit, push, etc
+- A programming language
+- How to install software on your own (for Bun, Docker, etc)
+
+## 📝 Lessons
+
+Here's a list of all the lessons:
+
+- [Lesson 1 - Initialise a basic Bun project](lessons/1-initialise-bun-project.md)
