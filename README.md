@@ -35,5 +35,4 @@ Here's a list of knowledge you need to have before doing this:
 Here's a list of all the lessons:
 
 - [Lesson 1 - Initialise a basic Bun project](lessons/1-initialise-bun-project.md)
-- [Lesson 2 - Add commitlint](lessons/2-add-commit-lint.md)
-- [Lesson 3 - Setup git hooks with Husky](lessons/3-setup-git-hook.md)
+- [Lesson 2 - Add commitlint and git hooks](lessons/2-add-commit-lint-git-hooks.md)

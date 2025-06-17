@@ -1,4 +1,34 @@
-# Set up git hooks with [Husky](https://typicode.github.io/husky/) to force commit lint's format
+# Add commit lint and Husky for git hooks
+
+In this lesson, you will learn how to add commit-lint and use husky to force conventional commits format for commits.
+
+## Add [Commit Lint](https://commitlint.js.org/) to force [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) as a commit message format
+
+Commit messages in a shared project are better if you have a common convention in place.
+
+Image, you like to commit something along the lines of "add dashboard page", while your colleague might write something like "feature dashboard", or any variation of that.
+
+Conventional commits already defines a great set of scopes depending on the type of work being done (feature, fix, docs, etc) and a format that also enables automatically generating version of your application that follows [SemVer]() with the same format of commit messages.
+
+You can also automate creating changelog, and more if everyone follows the same naming conventions for commit messages.
+
+Commit lint enables you to force that convention.
+
+To add commitlint, run the following command with bun :
+
+```bash
+bun add -d @commitlint/cli @commitlint/config-conventional
+```
+
+Then add the following content in a file named `commitlint.config.js` at the root of your project, on the same level as `package.json`:
+
+```js
+export default { extends: ['@commitlint/config-conventional'] };
+```
+
+You can add everything done up until now and commit it under something like `feat(commit): add commitlint`. Then simply push it to your repo !
+
+## Set up git hooks with [Husky](https://typicode.github.io/husky/) to force commit lint's format
 
 Husky allows us to add git hooks to enforce tasks we want to run before allowing a contributor to commit or push code.
 
