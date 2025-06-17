@@ -6,7 +6,7 @@ You'll learn how to:
 
 - Initialise a basic [Bun](https://bun.sh/) project
 - Add [Commit Lint](https://commitlint.js.org/) to force [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) as a commit message format
-- Set up pre-commit hooks with [Husky]() to force commit lint's format
+- Set up git hooks with [Husky](https://github.com/typicode/husky) to force commit lint's format
 - Add [Biome](https://biomejs.dev/) as a formatter and linter for js/ts
 - Add [Husky](https://typicode.github.io/husky/) to simplify git hooks management
 - Set up a [lint-staged](https://github.com/lint-staged/lint-staged) and a pre-commit hook to automatically lint and format code before committing
@@ -36,3 +36,4 @@ Here's a list of all the lessons:
 
 - [Lesson 1 - Initialise a basic Bun project](lessons/1-initialise-bun-project.md)
 - [Lesson 2 - Add commitlint](lessons/2-add-commit-lint.md)
+- [Lesson 3 - Setup git hooks with Husky](lessons/3-setup-git-hook.md)
