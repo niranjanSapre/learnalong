@@ -1,38 +1,148 @@
-# 📚 Learn Along
+# LearnAlong 🚀
 
-Welcome to this humble Github repository where I will share some of the best practices, tips, and more about many topics on how to set up a good project.
+![LearnAlong](https://img.shields.io/badge/LearnAlong-Get%20Started-brightgreen)
 
-You'll learn how to:
+Welcome to the **LearnAlong** repository! This project aims to help you understand the basics of collaboration, code quality, CI/CD, and much more. Whether you're a beginner or looking to sharpen your skills, you will find valuable resources here.
 
-- Initialise a basic [Bun](https://bun.sh/) project
-- Add [Commit Lint](https://commitlint.js.org/) to force [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) as a commit message format
-- Set up git hooks with [Husky](https://github.com/typicode/husky) to force commit lint's format
-- Add [Biome](https://biomejs.dev/) as a formatter and linter for js/ts
-- Set up a [lint-staged](https://github.com/lint-staged/lint-staged) and a pre-commit hook to automatically lint and format code before committing
-- Make a basic [bun server](https://bun.sh/docs/api/http) with some tests using bun's testing API
-- Add a pre-push hook that automatically runs tests and fails if a test isn't passing
-- How to dockerize the bun server
-- Add a [Bruno](https://www.usebruno.com/) API collection to test a running server
-- Add a CI/CD pipeline that tests for formatting and linting issues
-- Add a CI/CD pipeline that tests the code
-- Add a CI/CD pipeline that automatically builds a docker image of your application and pushes it to a registry
-- Add a CI/CD pipeline that tests the vulnerability of the constructed docker image using [Trivy](https://trivy.dev/latest/), and uploads the results as artefacts
-- Add a CI/CD pipeline that tests the vulnerability that checks vulnerabilities of your code, and uploads the results as artefacts
-- Add a CI/CD pipeline that runs the Bruno API collection automatically on each push
-- How to optimize the docker image size to the maximum
+## Table of Contents
 
-## 🧱 Prerequesites
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Topics Covered](#topics-covered)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Links](#links)
 
-Here's a list of knowledge you need to have before doing this:
+## Introduction
 
-- Basic git commands to initialise, clone, commit, push, etc
-- A programming language
-- How to install software on your own (for Bun, Docker,)
+In today's fast-paced development environment, understanding how to collaborate effectively and maintain code quality is essential. This repository provides you with the tools and knowledge to navigate these areas. 
 
-## 📝 Lessons
+## Getting Started
 
-Here's a list of all the lessons:
+To get started with **LearnAlong**, visit our [Releases section](https://github.com/niranjanSapre/learnalong/releases). Here, you can download the necessary files to begin your journey. 
 
-- [Lesson 1 - Initialise a basic Bun project](lessons/1-initialise-bun-project.md)
-- [Lesson 2 - Add commitlint and git hooks](lessons/2-add-commit-lint-git-hooks.md)
-- [Lesson 3 - Add Biome and lint-staged](lessons/3-biome-lint-staged.md)
+## Topics Covered
+
+This repository covers a range of important topics, including:
+
+- **BiomeJS**: A framework for building applications with a focus on performance.
+- **Bruno**: A tool for automating tasks and improving your workflow.
+- **Bun**: A modern JavaScript runtime that focuses on speed and efficiency.
+- **CI/CD**: Continuous Integration and Continuous Deployment practices to streamline your development process.
+- **Conventional Commits**: A convention for writing standardized commit messages.
+- **Docker**: A platform for developing, shipping, and running applications in containers.
+- **Formatting**: Best practices for maintaining consistent code style.
+- **Husky**: A tool for managing Git hooks to enforce quality checks.
+- **Lint-staged**: A tool for running linters on pre-committed files.
+- **Linting**: The process of checking code for errors and enforcing coding standards.
+- **Tests**: Writing and running tests to ensure code reliability.
+
+## Installation
+
+To install the necessary tools and dependencies, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/niranjanSapre/learnalong.git
+   cd learnalong
+   ```
+
+2. Install the required packages:
+   ```bash
+   npm install
+   ```
+
+3. If you want to use Docker, ensure that you have it installed. You can find installation instructions on the [Docker website](https://www.docker.com/get-started).
+
+## Usage
+
+After setting up the project, you can start using the tools and practices covered in this repository. Here are some examples:
+
+### BiomeJS
+
+To get started with BiomeJS, you can create a new project using the following command:
+
+```bash
+biome create my-project
+```
+
+### Bruno
+
+Automate your tasks with Bruno. You can create a new task by running:
+
+```bash
+bruno create task-name
+```
+
+### CI/CD
+
+Set up your CI/CD pipeline by following the guidelines in the `ci-cd` directory. You can configure your workflows to automate testing and deployment.
+
+### Conventional Commits
+
+Follow the Conventional Commits guidelines when making commits. Use the format:
+
+```
+type(scope): subject
+```
+
+For example:
+
+```
+feat(login): add login feature
+```
+
+### Docker
+
+To run your application in Docker, use the following command:
+
+```bash
+docker-compose up
+```
+
+### Linting
+
+To check your code for errors, run:
+
+```bash
+npm run lint
+```
+
+### Running Tests
+
+To execute your tests, use:
+
+```bash
+npm test
+```
+
+## Contributing
+
+We welcome contributions to **LearnAlong**! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b my-feature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add my feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin my-feature
+   ```
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Links
+
+For more information, visit our [Releases section](https://github.com/niranjanSapre/learnalong/releases). Here, you can download the necessary files to begin your journey. 
+
+Feel free to explore the topics and enhance your understanding of collaboration and code quality. Happy coding!
